@@ -113,7 +113,7 @@ p {
 
 /* ----------------------------- Leason 5 ---------------- */
 
-li {
+/* li {
   color: blue;
   text-decoration: underline;
   font-size: 15px;
@@ -142,4 +142,171 @@ footer {
 h2 {
   text-decoration: line-through;
 }
+ */
 
+/* ------------------------ RelationShip Practice ----------------------- */
+ /* NO classes or IDs */
+/* Please Make only World and Zebra Blue */
+/* section > h2 {
+  color: blue;
+
+} */
+
+
+/* Please Make only Zebra Purple */
+/* section > h2 + h2 {
+  color: purple;
+} */
+
+
+/* Please Make only Hufflepuff Gold */
+/* section article > h2 + h2 {
+  color: gold;
+}  */
+
+
+
+/* Please keep Hufflepuff Gold and make ONLY Unicorn Gray  */
+
+/* section article > h2 {
+  color: gray;
+} */
+
+
+
+
+/* Please Make only Rhino and Zebra Blue */
+/* .africa {
+  color: blue;
+} */
+
+/* Please Make only Hufflepuff Gold */
+/* #bestHouse {
+  color: gold;
+} */
+
+
+/* Please select Duck with the highest level of specificity possible */
+
+/* .likesToQuack{
+ color: red;
+}  */
+
+/* Please select Rhino with the highest level of specificity possible */
+
+/* .top, #rhino {
+  color: orange;
+} */
+
+/* .section {
+  float: left;
+  width: 33.3333%;
+} */
+
+
+/* <!-- ------------------------- Practice Floats Layout 1 -------------------------- --> */
+
+
+/* header, footer {
+  height: 60px;
+}
+
+.section {
+  border: 3px solid black;
+}
+
+.box1, .box2, .box3 {
+  height: 130px;
+  float: left;
+  width: 33.3333%;
+}
+
+.box4, .box5 {
+  height: 170px;
+}
+
+
+.box4{
+  clear: both;
+  float: left;
+  width: 50%;
+}
+
+.box5 {
+  float: right;
+  width: 50%;
+}
+
+footer {
+  clear: both;
+}
+
+p {
+  margin: 0px;
+} */
+
+
+/* <!-- ------------------------- Practice Floats Layout 2 -------------------------- --> */
+
+/* header, .one, footer {
+  border: 3px solid black; 
+}
+
+header, footer {
+  height: 100px;
+}
+
+p{
+  margin: 0;
+}
+
+.box1 {
+  height: 120px;
+}
+
+.box2 {
+  float: left;
+  width: 40%;
+  height: 160px;
+}
+
+.box3 {
+  float: right;
+  width: 60%;
+  height: 160px;
+}
+
+footer{
+  clear:both;
+} */
+
+
+/* <!-- ------------------------- Practice Floats Layout 3 -------------------------- --> */
+
+/* header, section, footer {
+  border: 3px solid black;
+}
+
+header, footer{
+  height: 120px;
+}
+
+
+section {
+  float: left;
+  height: 400px;
+}
+
+.section1, .section3, .section4 {
+  width: 20%;
+}
+
+.section2 {
+  width: 40%;
+}
+
+
+
+footer {
+  clear: both;
+} */
