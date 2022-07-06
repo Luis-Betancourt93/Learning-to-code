@@ -310,3 +310,114 @@ section {
 footer {
   clear: both;
 } */
+
+/* <!-- ------------------------- Lesson 6 Prictice -------------------------- --> */
+
+
+/* Please make the anchor tags gold, 20px, and have a purple background */
+
+/* a {
+  color: gold;
+  font-size: 20px;
+  background-color: purple;
+} */
+
+
+/* Please make the section have a height of 200px, a 10px thick blue border, and a light orange background */
+
+/* section {
+  height: 200px;
+  border: 10px solid blue;
+  background-color: orange;
+} */
+
+
+/* Please make the aside have a height of 300px, a thin red border, and a teal background  */
+
+/* aside {
+  height: 300px;
+  border: 2px solid red;
+  background-color: teal;
+} */
+
+
+/* Please make the aside paragraph have white text, 18px, and a red underline */
+
+/* aside p {
+  color: white;
+  font-size: 18px;
+  text-decoration: underline;
+  text-decoration-color: red;
+} */
+
+
+
+
+/* NO classes or IDs */
+
+/* Please make only "Just kidding!" yellow */
+
+/* section h2 {
+  color: yellow;
+} */
+
+
+/* Please make only "twitter" red and 20px */
+
+/* aside a {
+  color: red;
+  font-size: 20px;
+} */
+
+
+
+/* Please make "Really hot" purple & "Like WILD hot" larger and blue  */
+
+/* article > h2 {
+  color: purple;
+} */
+
+/* article h2 + h2 {
+  font-size: 50px;
+  color: blue;
+} */
+
+
+/* Please make only bob and pizza green */
+
+/* nav ul + ul li  a {
+  color: green;
+} */
+
+
+
+
+/*/* Please make "This is an ad..." blue, but make sure it is specific enough that you could add other h3's somewhere eles in the document. */
+/* header + section aside.extraExtraReadAllAboutIt h3{
+  color: blue;
+} */
+
+
+/* Please make "I like turtles." red */
+
+/* section#changedIt h2 {
+  color: red;
+} */
+
+/* Please select "Hello, world!" with the highest level of specificity possible*/
+
+/* header + section#rugratsWildThornberrysBestCrossOverAllTime h2 {
+  color: orange;
+} */
+
+
+
+/* Please select "Let's get down to business..." with the highest level of specificity possible */
+ 
+/* section + section#changedIt p.passTheRemote.turtles {
+  color: purple;
+} */
+
+
+
+
