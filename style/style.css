@@ -3,6 +3,12 @@
 }
 
 
+/* Defualt is 16px, 62.5% makes it where 1rem = 10px */
+html {
+  font-size: 62.5%; 
+}
+
+
 /* img {
  width: 300px;
 } */
@@ -416,8 +422,47 @@ footer {
  
 /* section + section#changedIt p.passTheRemote.turtles {
   color: purple;
-} */
+}
+*/
 
+/* <!-- -------------------- Lesson 7 Practice (Box Model) ---------- --> */
+
+/* Please give the h1 some padding on three sides, margin on just one side, and a light purple background with light blue lettering */
+
+h1 {
+  padding: 0 5px 5px 5px;
+  margin-top: 5px;
+  background-color: blueviolet;
+  color: lightblue;
+}
+
+
+/* Please give the h2 significant padding on the top and bottom, a dark green border on the top and bottom, and an orange background */
+			
+h2 {
+  padding: 15px 0;
+  border-top: 2px solid darkgreen;
+  border-bottom: 2px solid darkgreen;
+  background-color: orange;
+}
+
+
+/* Please give the section a thick blue border, height of 300px, and more the 400px of margin on the top */
+			
+section {
+  border:10px solid darkblue;
+  height: 300px;
+  margin-top: 400px;
+}
+
+
+/* Please make the spans have thin yellow borders and equal padding / margin on all sides */
+
+span {
+  border:2px solid yellow;
+  padding: 5px;
+  margin: 5px;
+}
 
 
 
