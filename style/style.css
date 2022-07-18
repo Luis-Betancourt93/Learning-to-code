@@ -4,9 +4,9 @@
 
 
 /* Defualt is 16px, 62.5% makes it where 1rem = 10px */
-html {
+/* html {
   font-size: 62.5%; 
-}
+} */
 
 
 /* img {
@@ -429,40 +429,49 @@ footer {
 
 /* Please give the h1 some padding on three sides, margin on just one side, and a light purple background with light blue lettering */
 
-h1 {
+/* h1 {
   padding: 0 5px 5px 5px;
   margin-top: 5px;
   background-color: blueviolet;
   color: lightblue;
-}
+} */
 
 
 /* Please give the h2 significant padding on the top and bottom, a dark green border on the top and bottom, and an orange background */
 			
-h2 {
+/* h2 {
   padding: 15px 0;
   border-top: 2px solid darkgreen;
   border-bottom: 2px solid darkgreen;
   background-color: orange;
-}
+} */
 
 
 /* Please give the section a thick blue border, height of 300px, and more the 400px of margin on the top */
 			
-section {
+/* section {
   border:10px solid darkblue;
   height: 300px;
   margin-top: 400px;
-}
+} */
 
 
 /* Please make the spans have thin yellow borders and equal padding / margin on all sides */
 
-span {
+/* span {
   border:2px solid yellow;
   padding: 5px;
   margin: 5px;
+} */
+
+/* <!-- --------- Temperature converter code lesson 13 ----------- --> */
+
+body {
+  background-color: gray;
 }
 
-
-
+.temperature {
+  text-align: center;
+  height: 200px;
+  margin-top: 50px;
+}
