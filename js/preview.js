@@ -195,3 +195,30 @@
 
 
 //Bonus can you make it print '21' 21 times to the dom?
+
+// ------------------ Practice For Loops -----------------
+
+// console log even numbers 0 - 20 
+
+// for(i=0; i<=20; i+=2 ) {
+//   console.log(i);
+// }
+
+
+// console log from 100 to 0 going down by 10
+
+// for(i=100; i>=0; i-=10){
+//   console.log(i);
+// }
+
+
+// console log from 25 to 0 going down 5 time each time 
+// for(i=25; i>=0; i-=5){
+//   console.log(i);
+// }
+
+// console log ever name in the array and make them uper case
+// let people = ["Scooby", "Velma", "Daphne", "Shaggy", "Fred"];
+// for(i=0; i<=people.length; i++){
+//   console.log(people[i].toUpperCase())
+// }
