@@ -308,7 +308,193 @@
 // console.log(lastMovie);
 
 
-// ------------------ Team TreeHouse Array -----------------
+// ------------------ Team TreeHouse Loops -----------------
 
  
+
+// WHILE LOOP
+
+// function getRandomNumber(upper) {
+//   return Math.floor( Math.random() * upper ) + 1;
+// }
+
+// let counter = 0;
+// while(conter < 10) {
+//   console.log(`the random number is ${getRandomNumber(10)}`);
+//   conter += 1;
+// }
+
+
+
+// Do while Loop
+
+// function getRandomNumber(upper) {
+//   return Math.floor( Math.random() * upper ) + 1;
+// }
+
+// let counter = 0;
+
+// do{
+//   console.log(`The random number is ${getRandomNumber(10)}`);
+//   counter += 1;
+// } while( counter < 10 );
+
+
+
+// Display the prompt dialogue while the value assigned to `secret` is not equal to "sesame"
+// let secret = prompt("What is the secret password?");
+
+// // This should run after the loop is done executing
+// alert("You know the secret password. Welcome!");
+
+
+// let secret
+// do {
+//    secret = prompt("What is the secret password?");
+// } while (secret !== "sesame");
+// alert("You know the sevret password. Welcome");
+
+// ----------------------- Class 19 arrays-fight to the finish ----------------
+
+//Create an array of movie titles. Loop through the array and each element to the h2.
+// let movies = ["Bring it on ", "Final Fantasy ", "Kill bill"];
+// movies.forEach((element, index) => document.querySelector("h2").innerText += element);
+
+
+// //Create an array of numbers. Loop through the array and three to each number and replace the old number.
+// let nums = [100, 200, 300];
+// nums.forEach( (element, index) => console.log(element + 3));
+
+
+// //Find the average of all the numbers from question three
+// let total = 0;
+// for (let i = 0; i < nums.length; i++) {
+//   total += nums[i];
+// } 
+
+// let avg = total / nums.length;
+// console.log(avg);
+
+
+
+
+
+// ----------------------- Class 20 Review-in-paradise ----------------
+
+
+// *Variables*
+// Declare a variable, reassign it to your favorite food, and alert the value
+
+  // let favoriteFood = "Pizza";
+  // alert(favoriteFood);
+
+//Declare a variable, assign it a string, alert the second character in the string (Use your google-fu and the MDN)
+
+  // let randomString = "Hello";
+  // alert(randomString.charAt(1));
+
+
+
+// *Functions*
+// Create a function that takes in 3 numbers. Divide the first two numbers and multiply the last. Alert the product. Call the function.
+   
+  // function takesThree(num1, num2, num3) {
+  //   alert((num1 / num2 ) * num3);
+  // }
+
+  // takesThree(100, 10, 5);
+
+
+// Create a function that takes in 1 number. Console log the cube root of the number. Call the function.
+
+  // function takesOne (num1) {
+  //   console.log(Math.cbrt(num1));
+  // }
+  // takesOne(576483);
+
+// *Conditionals*
+//Create a function that takes in a month. If it is a summer month alert "YAY". If another other month, alert "Booo"
+
+  // function whichMonth(month) {
+  //     if (month === "june" || month === "july" || month === "august") {
+  //       alert("YAY");
+  //     } else {
+  //       alert("BOOOO");
+  //     }
+  // }
+
+  // whichMonth("octuber");
+
+
+//*Loops*
+//Create a function that takes in a number. Console log every number from 1 to that number while skipping multiples of 5.
+
+// function skipsNumber (num1) {
+//     for(let i = 1; i <= num1; i ++ ) {
+//       if (i % 5 !== 0 ) {
+//         console.log(i);
+//       }   
+//     }
+// }
+
+//  skipsNumber(80);  
+
+// ----------------------- Class 20 Review-after-paradise ----------------
+
+// Create a function that takes in an array. If the first number, is less than the last number, alert "Hi". If the first number is greater than the last number, alert "Bye". If they are equal, alert "We close in an hour".
+
+// let numbers = [100, 200, 300];
+
+
+// function takeArray(numbers) {
+//   if (numbers[0] < numbers[numbers.length - 1] ) {
+//     alert("Hi");
+//   } else if (numbers[0] > numbers[numbers.length - 1]) {
+//     alert("Bye");
+//   } else if (numbers[0] === numbers[numbers.length - 1]) {
+//     alert("We close in an hour");
+//   }
+// }
+
+
+
+// ----------------------- Class 20 Summer Games ----------------
+
+//Create a function that takes in an array of numbers. Multiply each number together and alert the product. 
+
+// function multiplyNumbers (arr) {
+//   let product = 1
+//   for(let i = 0; i < arr.length; i++) {
+//     product *= arr[i];
+//   }
+//   alert(product);
+// }
+
+// multiplyNumbers([100, 200, 300]);
+
+
+
+// ----------------------- Class 20 Winter Games ----------------
+
+
+//Create a function that takes in an array of numbers. Return a new array containing every even number from the original array (do not use map or filter)
+
+
+// function arrayOfNums(nums) {
+//   let even = [];
+//   nums.forEach( x => {
+//     if (x % 2 === 0 ) {
+//       even.push(x)
+//     }
+//   });
+  
+//   return even;
+// }
+
+// console.log( arrayOfNums([1, 2, 3, 4, 5, 6, 7, 8, 9, 10] ) );
+
+
+
+
+
 
