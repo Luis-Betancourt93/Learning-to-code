@@ -494,7 +494,113 @@
 // console.log( arrayOfNums([1, 2, 3, 4, 5, 6, 7, 8, 9, 10] ) );
 
 
+// ----------------------- Class 21  Mighty Morphin Review ----------------
+
+
+// *Variables*
+// Declare a variable, reassign it to your fav holiday, make sure it is in all caps, and print the value to the console
+// let month = "CHRISMAS";
+// let myFavHoliday = month;
+// console.log(myFavHoliday);
+
+//Declare a variable, assign it a string, alert the last three characters in the string (Use your google-fu and the MDN)
+// let lastThree = "Luis";
+// alert(lastThree.slice(-3));
 
 
 
+// *Functions*
+// Create a function that takes in 5 numbers. Subtract all five from 100. Alert the absolute value of the difference. Call the function.
 
+// function takesFive (num1, num2, num3, num4, num5){
+    //  let difference = (num1 + num2 + num3 + num4 + num5) - 100;
+//   alert(Math.abs(difference));
+// }
+
+// takesFive(100, 100, 100, 100, 100);
+
+
+
+// Create a function that takes in 3 numbers. Console log lowest and highest values. Call the function.
+// function takesThree (number1, number2, number3) {
+//   console.log(Math.max(number1, number2, number3));
+//   console.log(Math.min(number1, number2, number3));f
+// }
+
+// takesThree(100, 200, 300);
+
+
+// *Conditionals*
+//Create a function that returns heads or tails randomly and as fairly as possible. Call the function.
+// function headsOrTails(){
+//   let results = Math.random();
+//   if (results < .5) {
+//     return "Heads";
+//   } else {
+//     return "Tails"
+//   }
+// }
+
+// console.log(headsOrTails())
+
+
+
+//*Loops*
+//Create a function that takes in a number. Console log the result of heads or tails using the previous function x times where x is the number passed into the function. Call the function.
+
+// ----------------------- Class 21  Alien Ranger Review ----------------
+
+//Arrays
+
+//Create and array of tv shows. Loop through and print each show to the console
+
+// let movies = ["Pokemon", "Dragon Ball Z", "Attack On Titan"];
+
+// for(let i = 0; i < movies.length; i ++ ) {
+//   console.log(movies[i])
+// }
+
+
+//Create and array of numbers
+//Return a new array of numbers that includes every even number from the previous Arrays
+
+// let numbers = [ 100, 200, 300, 400];
+
+// let onlyEvens = arry => arry.filter ( n => n % 2 === 0 );
+
+// console.log( onlyEvens(numbers));
+
+
+//Create a function that takes in an array of numbers
+//Alert the sum of the second lowest and the second highest number
+
+// function sumSecondLowAndHigh(arr){
+//   let sorted = arr.sort((a,b) => a-b);
+//   alert( sorted[1] + sorted[ sorted.length - 2]);
+// }
+// sumSecondLowAndHigh([2, 3, 1, 5, 4]);
+
+
+
+// ----------------------- Class 21  objects-zero ----------------
+
+// Create a stopwatch object that has four properties and three methods
+
+const stopWatch = {};
+
+stopWatch.brand = "Nike";
+stopWatch.color = "Black";
+stopWatch.shape = "round";
+stopWatch.size = "Small";
+
+stopWatch.start = function() {
+  console.log("Start");
+}
+
+stopWatch.stop = function() {
+  console.log("Stop");
+}
+
+stopWatch.sayBrand = function() {
+  console.log(stopWatch.brand);
+}
