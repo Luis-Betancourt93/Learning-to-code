@@ -586,21 +586,46 @@
 
 // Create a stopwatch object that has four properties and three methods
 
-const stopWatch = {};
+// const stopWatch = {};
 
-stopWatch.brand = "Nike";
-stopWatch.color = "Black";
-stopWatch.shape = "round";
-stopWatch.size = "Small";
+// stopWatch.brand = "Nike";
+// stopWatch.color = "Black";
+// stopWatch.shape = "round";
+// stopWatch.size = "Small";
 
-stopWatch.start = function() {
-  console.log("Start");
-}
+// stopWatch.start = function() {
+//   console.log("Start");
+// }
 
-stopWatch.stop = function() {
-  console.log("Stop");
-}
+// stopWatch.stop = function() {
+//   console.log("Stop");
+// }
 
-stopWatch.sayBrand = function() {
-  console.log(stopWatch.brand);
-}
+// stopWatch.sayBrand = function() {
+//   console.log(stopWatch.brand);
+// }
+
+// ----------------------- Bpesquet The JS Way Practice  ----------------
+
+// PRESENTATION
+// Write a program that displays your name and age. 
+// console.log("Luis");
+// console.log(28);
+
+
+// MINIMALISTIC CALCULATOR
+// Write a program that displays the results of adding, subtracting, multiplying and dividing 6 by 3. 
+// console.log(6 + 3);
+// console.log(6 - 3);
+// console.log(6 * 3);
+// console.log(6 / 3);
+
+// Values Prediction 
+// Observe the following program and try to predict the values it displays.
+
+// console.log( 4 + 5 );
+  // should show 9
+// console.log("4 + 5");
+  // should show 4 + 5
+// console.log("4" + "5");
+  // should show 45
