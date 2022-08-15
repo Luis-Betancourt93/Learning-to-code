@@ -629,3 +629,53 @@
   // should show 4 + 5
 // console.log("4" + "5");
   // should show 45
+
+
+  // ----------------------- Bpesquet The JS Way Practice Ch3 "Adding Conditions" ----------------
+
+
+// Following day Challenge
+// Write a program that accepts a day name from the user, then shows the name of the following day. Incorrect inputs must be taken into account.
+
+//  let todaysDate = prompt("What day is it?");
+//  if (todaysDate.toLocaleLowerCase() === "monday") {
+//   console.log("Well back to work we go! Tomorrow will be Tuesday");
+//  } else if (todaysDate.toLocaleLowerCase() === "tuesday"){
+//   console.log("It's Tuesday, I have to go shopping for food. Tomorrow will be Wednesday!!");
+//  } else if (todaysDate.toLocaleLowerCase() === "wednesday") {
+//   console.log("It's Humbs day!!! Tomorrow will be Thursday ");
+//  } else if (todaysDate.toLocaleLowerCase() === "thursday") {
+//   console.log("Hopefully today goes by fast, tomorrow will be Friday");
+//  } else if (todaysDate.toLocaleLowerCase() === "friday"){
+//   console.log("It's Friday!!!!!");
+//  } else if (todaysDate.toLocaleLowerCase() === "saturday" || todaysDate.toLocaleLowerCase() === "sunday"){
+//   console.log("Its the WEEKEND!!!");
+//  }
+
+//  Number comparison Challenge
+//  Write a program that accepts two numbers, then compares their values and displays an appropriate message in all cases.
+
+// let numberOne = Number(prompt("Pick a number!"));
+// let numberTwo = Number(prompt("Pick another number "));
+
+// if (numberOne < numberTwo) {
+//   console.log("Your first number is less then your second number");
+// } else {
+//   console.log("Your first number is grater then your second number");
+// }
+
+
+
+// Number of days in a month Challenge
+// Write a program that accepts a month number (between 1 and 12), then shows the number of days of that month. Leap years are excluded.        Incorrect inputs must be taken into account.
+
+// let month = Number(prompt("Please enter the month number we are on."));
+// if (month === 1 || month === 3 || month === 5 || month === 7 || month === 8 || month === 10 || month === 12) {
+//   console.log("There are 31 days in that month!");
+// } else if (month === 4 || month === 6 || month === 9 || month === 11) {
+//   console.log("There are 30 days in that month!");
+// } else if (month === 2){
+//   console.log("Its February and there are 28 day in that month");
+// } else {
+//   alert("Not a valid Input");
+// }
