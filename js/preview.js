@@ -679,3 +679,35 @@
 // } else {
 //   alert("Not a valid Input");
 // }
+
+
+// ----------------------- Bpesquet The JS Way Practice Ch4 "Loops" ----------------
+
+// Carousel
+// Write a program that launches a carousel for 10 turns, showing the turn number each time.
+// When it's done, improve it so that the number of turns is given by the user.
+
+// let carousel = 10;
+// while (carousel <= 10) {
+//   console.log(carousel);
+//   carousel ++;
+// }
+
+// let userInput = Number(prompt("Enter a number to loop how many times."));
+// for(i = 1; i <= userInput; i++ ) {
+//   console.log(userInput);
+// }
+
+
+// Input validation
+// Write a program that continues to ask the user for a number until the entered number is less than or equal to 100.
+
+
+// let userNumber = Number(prompt("Enter a Number"));
+
+// while(userNumber > 100) {
+//   alert("Try Again");
+//  userNumber = Number(prompt("Enter a Number"));
+// }
+
+// console.log("You Finally enter a number less then or equal to 100");
