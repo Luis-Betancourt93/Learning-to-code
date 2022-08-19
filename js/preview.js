@@ -793,3 +793,60 @@
 
 //Create a function that takes in a string
 //Alert if the string is a palindrome or not
+
+// ----------------------- Objects Lost Galaxy Review ----------------
+
+//Create a mouse object that has four properties and three methods
+
+// const mouse = {}
+
+// mouse.brand = "LogiTech"
+// mouse.color = "Black"
+// mouse.model = "MX 3"
+// mouse.wireless = true
+
+// mouse.leftClick = function() {
+//   console.log("Left Clickkk");
+// }
+
+// mouse.rightClick = function() {
+//   console.log("Right Click");
+// }
+
+// mouse.scroll = function() {
+//   console.log("Jump Jump Jump");
+// }
+
+
+
+// ----------------------- Street Fighter Review ----------------
+
+//Create a street fighter constructor that makes fighting game characters with 4 properties and 3 methods
+
+function StreetFighter (gender,age,origin,finalMove) {
+this.gender = gender;
+this.age = age;
+this.origin = origin;
+this.finalMove = finalMove;
+
+this.special = function() {
+  alert("Your died");
+}
+this.block = function() {
+  alert("Think Again");
+}
+
+this.tagTeam = function() {
+  alert("Its 2 vs 1 now!!");
+}
+
+}
+
+let fightRyu = new StreetFighter ("Male", "30", "Japan", "Hadoken" );
+
+console.log(fightRyu);
+
+let fighterChunLi = new StreetFighter ("Female", "25", "Japan", "Hyakurtsukyaku");
+
+console.log(fighterChunLi);
+fightRyu.special();
