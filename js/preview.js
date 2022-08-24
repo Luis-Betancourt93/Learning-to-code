@@ -823,30 +823,157 @@
 
 //Create a street fighter constructor that makes fighting game characters with 4 properties and 3 methods
 
-function StreetFighter (gender,age,origin,finalMove) {
-this.gender = gender;
-this.age = age;
-this.origin = origin;
-this.finalMove = finalMove;
+// function StreetFighter (gender,age,origin,finalMove) {
+// this.gender = gender;
+// this.age = age;
+// this.origin = origin;
+// this.finalMove = finalMove;
 
-this.special = function() {
-  alert("Your died");
-}
-this.block = function() {
-  alert("Think Again");
-}
+// this.special = function() {
+//   alert("Your died");
+// }
+// this.block = function() {
+//   alert("Think Again");
+// }
 
-this.tagTeam = function() {
-  alert("Its 2 vs 1 now!!");
-}
+// this.tagTeam = function() {
+//   alert("Its 2 vs 1 now!!");
+// }
 
-}
+// }
 
-let fightRyu = new StreetFighter ("Male", "30", "Japan", "Hadoken" );
+// let fightRyu = new StreetFighter ("Male", "30", "Japan", "Hadoken" );
 
-console.log(fightRyu);
+// console.log(fightRyu);
 
-let fighterChunLi = new StreetFighter ("Female", "25", "Japan", "Hyakurtsukyaku");
+// let fighterChunLi = new StreetFighter ("Female", "25", "Japan", "Hyakurtsukyaku");
 
-console.log(fighterChunLi);
-fightRyu.special();
+// console.log(fighterChunLi);
+// fightRyu.special();
+
+
+// ----------------------- Class 23 Turbo Review ----------------
+
+// *Variables*
+// Declare a variable and assign it to a sentance as a string. Alert if the sentance is a question.
+// let ifQuetion = "What is your Brithday?";
+// if (ifQuetion.indexOf("?") >= 0) {
+//   alert("We have a Quetion!");
+// } else {
+//   console.log("Its not a Question");
+// }
+
+
+//Declare a variable, assign it a string of multiple words, replace every "jr. dev" with "software engineer", and print it to the console
+
+// let randomWords = "jr.dev tech money work from home freedom";
+// console.log(randomWords.replace("jr.dev", "software engineer"));
+
+
+// *Functions*
+// Create a function that returns rock, paper, or scissors as randomly as possible
+// function rockPapperScissors (){
+//   let choiceNumber = Math.ceil(Math.random() * 3 );
+//       if (choiceNumber === 1) {
+//       return "rock";
+//       } else if (choiceNumber === 2){
+//         return "paper"
+//       } else {
+//         return "scissors";
+//       }
+// } 
+
+// *Conditionals*
+//Create a function that takes in a choice (rock, paper, or scissors) and determines if they won a game of rock paper scissors against a bot using the above function
+
+// function didYouWin(player) {
+//     let computer  = rockPapperScissors();
+//     if( (player === "rock" && computer === "scissors") || (player === "papper" && computer === "rock") || (player === "scissors" && computer === "papper")){
+//       console.log("you win");
+//     } else if (player === computer  ) {
+//       console.log("its a tie");
+//     } else {
+//       console.log("you loose");
+//     }
+//   }
+  
+
+//*Loops*
+//Create a function that takes an array of choices. Play the game x times where x is the number of choices in the array. Print the results of each game to the console.
+
+
+// ----------------------- Class 23 Space Review ----------------
+
+
+//Arrays
+
+//Create and array of numbers. Sum all of the numbers. Alert the sum.
+// let numbers = [1, 2, 4, 5, 67];
+// let sum = 0;
+
+// for (let i = 0; i < numbers.length; i++){
+//   sum += numbers[i];
+// }
+
+// console.log(sum);
+
+//Create a function that takes in an array of numbers
+//Return a new array of numbers that is every original number squared
+
+// ******* Class 23 Time: 2:00:00 https://www.youtube.com/watch?v=qnmKELgyXc0&t=3197s&ab_channel=LeonNoel
+ 
+//Create a function that takes string
+//Print the reverse of that string to the console
+
+// Program to reverse a String 
+// function reverseString (str) {
+
+  // return a new array of strings
+  // const arrayString = str.split("");
+
+  // reverse the new created array elements
+  // const reverseArray = arrayString.reverse();
+
+  // join all elements of the array into a string
+  // const joinArray = reverseArray.join("");
+
+  // return the reversed string 
+  // return joinArray;
+
+// }
+
+// Take input from the user 
+// const string= prompt("Enter a String");
+
+// const result = reverseString(string);
+// console.log(result);
+
+
+// In the above program, the built-in methods are used to reverse a string.
+
+// First, the string is split into individual array elements using the split() method. str.split("") gives ["h", "e", "l", "l", "o"].
+// The string elements are reversed using the reverse() method. arrayStrings.reverse() gives ["o", "l", "l", "e", "h"].
+// The reversed string elements are joined into a single string using the join() method. reverseArray.join("") gives olleh.
+
+//Create a function that takes in a string
+//Alert if the string is a palindrome or not
+
+
+// function palindromeOrNot(str) {
+//   const arrayString = str.split("");
+//   const reverseArray = arrayString.reverse();
+//   const joinArray = reverseArray.join("");
+
+//   if (str === joinArray) {
+//     console.log("It is a palindrome");
+//   } else {
+//     console.log("It is not a palindrome");
+//   }
+
+// }
+
+// const string = prompt("Let's Check if its a Palindrome");
+// palindromeOrNot(string);
+
+
+//Create a dog object that has four properties and three methods
