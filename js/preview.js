@@ -977,3 +977,32 @@
 
 
 //Create a dog object that has four properties and three methods
+
+let dogHusky = {
+  color: "gray", 
+  age: 8, 
+  gender: "female", 
+  bread: "Husky"
+
+
+}
+
+// /Create a Tony Hawk Pro Skater constructor that makes fighting game characters with 4 properties and 3 methods
+
+function SkateBoard(stakeBoardBrand, stakeBoardColor, stakeBoardDesign, stakeBoardWheels) {
+  this.brand = stakeBoardBrand
+  this.color = stakeBoardColor
+  this.design = stakeBoardDesign
+  this.wheels = stakeBoardWheels
+  this.flip = function() {
+    console.log("We did a kick Flip!!");
+  }
+  this.rail = function() {
+    console.log("We are raiding on the guard rail");
+  }
+}
+
+
+let luisBoard = new SkateBoard("Nike", "Black", "Carbon Fiber", "Red");
+
+console.log(luisBoard.flip);
