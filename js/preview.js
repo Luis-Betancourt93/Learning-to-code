@@ -978,31 +978,86 @@
 
 //Create a dog object that has four properties and three methods
 
-let dogHusky = {
-  color: "gray", 
-  age: 8, 
-  gender: "female", 
-  bread: "Husky"
-
-
-}
+// let dogHusky = {
+//   color: "gray", 
+//   age: 8, 
+//   gender: "female", 
+//   bread: "Husky"
+// }
 
 // /Create a Tony Hawk Pro Skater constructor that makes fighting game characters with 4 properties and 3 methods
 
-function SkateBoard(stakeBoardBrand, stakeBoardColor, stakeBoardDesign, stakeBoardWheels) {
-  this.brand = stakeBoardBrand
-  this.color = stakeBoardColor
-  this.design = stakeBoardDesign
-  this.wheels = stakeBoardWheels
-  this.flip = function() {
-    console.log("We did a kick Flip!!");
-  }
-  this.rail = function() {
-    console.log("We are raiding on the guard rail");
-  }
+// function SkateBoard(stakeBoardBrand, stakeBoardColor, stakeBoardDesign, stakeBoardWheels) {
+//   this.brand = stakeBoardBrand
+//   this.color = stakeBoardColor
+//   this.design = stakeBoardDesign
+//   this.wheels = stakeBoardWheels
+//   this.flip = function() {
+//     console.log("We did a kick Flip!!");
+//   }
+//   this.rail = function() {
+//     console.log("We are raiding on the guard rail");
+//   }
+// }
+
+
+// let luisBoard = new SkateBoard("Nike", "Black", "Carbon Fiber", "Red");
+
+// console.log(luisBoard.flip);
+
+
+
+// ----------------------- Class 26 Objects Lost Galaxy Review ----------------
+
+//Create a dog object that has four properties and three methods
+
+let dog = {};
+
+dog.name = "shadow";
+dog.breed = "Husky";
+dog.color = "Black and White";
+dog.gender = "Male";
+
+dog.bark = function() {
+  console.log( "Woof Woof");
 }
 
+dog.bite = function () {
+  console.log("I'm Bitting You!!!!");
+}
 
-let luisBoard = new SkateBoard("Nike", "Black", "Carbon Fiber", "Red");
+dog.run = function() {
+  console.log("I'm Sprinting all over the back yard!");
+}
 
-console.log(luisBoard.flip);
+dog.bark();
+dog.bite();
+dog.run();
+
+//Create a Pizza object that has four properties and three methods using "Object Literals"
+
+let pizza = {};
+
+pizza.shape = "round";
+pizza.origin = "Dominos";
+pizza.topping = ["spinach", "onion", "jalapenos"];
+pizza.sause = "tomato";
+
+console.log(`Your pizza has ${pizza.topping[1]} on them`);
+
+
+pizza.sizzling = function() {
+  alert("CareFull I'm Hot");
+}
+
+pizza.timer = function() {
+  alert("Pizza is done");
+}
+
+pizza.doorBell = function() {
+  console.log("Pizza delivery guy is here!!");
+}
+
+pizza.sizzling();
+pizza.doorBell();
+pizza.timer();
