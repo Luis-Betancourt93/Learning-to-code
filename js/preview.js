@@ -1011,53 +1011,183 @@
 
 //Create a dog object that has four properties and three methods
 
-let dog = {};
+    // let dog = {};
 
-dog.name = "shadow";
-dog.breed = "Husky";
-dog.color = "Black and White";
-dog.gender = "Male";
+// Making 4 Properties
+    // dog.name = "shadow";
+    // dog.breed = "Husky";
+    // dog.color = "Black and White";
+    // dog.gender = "Male";
 
-dog.bark = function() {
-  console.log( "Woof Woof");
-}
+// Making 3 METHODS
+    // dog.bark = function() {
+    //   console.log( "Woof Woof");
+    // }
 
-dog.bite = function () {
-  console.log("I'm Bitting You!!!!");
-}
+    // dog.bite = function () {
+    //   console.log("I'm Bitting You!!!!");
+    // }
 
-dog.run = function() {
-  console.log("I'm Sprinting all over the back yard!");
-}
-
-dog.bark();
-dog.bite();
-dog.run();
+    // dog.run = function() {
+    //   console.log("I'm Sprinting all over the back yard!");
+    // }
+// Calling the METHODS
+    // dog.bark();
+    // dog.bite();
+    // dog.run();
 
 //Create a Pizza object that has four properties and three methods using "Object Literals"
 
-let pizza = {};
+// let pizza = {};
 
-pizza.shape = "round";
-pizza.origin = "Dominos";
-pizza.topping = ["spinach", "onion", "jalapenos"];
-pizza.sause = "tomato";
+// Making 4 Properties
+    // pizza.shape = "round";
+    // pizza.origin = "Dominos";
+    // pizza.topping = ["spinach", "onion", "jalapenos"];
+    // pizza.sause = "tomato";
 
-console.log(`Your pizza has ${pizza.topping[1]} on them`);
+    // console.log(`Your pizza has ${pizza.topping[1]} on them`);
+
+// Making 3 METHODS
+    // pizza.sizzling = function() {
+    //   alert("CareFull I'm Hot");
+    // }
+
+    // pizza.timer = function() {
+    //   alert("Pizza is done");
+    // }
+
+    // pizza.doorBell = function() {
+    //   console.log("Pizza delivery guy is here!!");
+    // }
+
+// Calling the METHODS
+    // pizza.sizzling();
+    // pizza.doorBell();
+    // pizza.timer();
+
+// *************** Making a Constructor (Old Way)************
+
+// function MakeCar( carMake, carModel, carColor, numOfDoors ) {
+//   this.make = carMake;
+//   this.model = carModel;
+//   this.color = carColor;
+//   this.doors = numOfDoors;
+
+//   this.honk = function(){
+//     alert("BEEP BEEP FUCKER");
+//   }
+
+//   this.lock = function() {
+//     alert(`Locked ${this.doors} doors!`);
+//   }
+// }
+
+// Making a new Object using the Constructor above
+    // let hondaCivic = new MakeCar ("Honda", "Civic", "Silver", 4 );
+    // let teslaRoadster = new MakeCar('Telsa', 'Roadster', 'Red', 2 );
 
 
-pizza.sizzling = function() {
-  alert("CareFull I'm Hot");
-}
+// ************************************************** ES6 CLASSES ************************************************************************
+// Making a Constructor (NEW WAY)
+    // class MakeCar {
+    //   constructor(carMake, carModel, carColor, numOfDoors) {
+    //     this.make = carMake;
+    //     this.model = carModel;
+    //     this.color = carColor;
+    //     this.doors = numOfDoors;
+    //   }
 
-pizza.timer = function() {
-  alert("Pizza is done");
-}
+    //   honk() {
+    //     alert("BEEP BEEP FUCKER!!");
+    //   }
 
-pizza.doorBell = function() {
-  console.log("Pizza delivery guy is here!!");
-}
+    //   lock() {
+    //     alert(`Locked ${this.door} doors!`);
+    //   }
 
-pizza.sizzling();
-pizza.doorBell();
-pizza.timer();
+    // }
+
+// Making a new Object using the new ES6 Syntax
+    // let hondaCivic = new MakeCar ( 'Honda', 'Civic', 'Silver', 4 );
+    // let teslaRoadster = new MakeCar ('Telsa', 'Roadster', 'Red', 2 );
+
+// ----------------------- Class 26 Objects Constructor Fun Review ----------------
+
+//Create a constructor with 4 properties and 3 methods
+
+// function House ( houseLocation, houseStorys, houseBuilt, houseColor ) {
+//   this.location = houseLocation;
+//   this.storys = houseStorys;
+//   this.built = houseBuilt;
+//   this.color = houseColor;
+
+//   this.doorRing = function() {
+//     alert('Someone is at the door!');
+//   }
+//   this.garageOpener = function() {
+//     alert('Someone just opened the garage Doors!');
+//   }
+
+//   this.pourchLights = function() {
+//     alert('Pourch lights turn on');
+//   }
+// }
+
+// Making Stacy a House 
+    // let stacyHouse = new House( "San Diego", 2, 2022, "Dark Blue");
+
+// Putting the "Properties" of the Constructor to work 
+    // console.log(`Stacy has a house in ${stacyHouse.location} which is ${stacyHouse.storys} storys tall!`);
+
+// Making her sister a House
+    // let mitchellHouse = new House('Texas', 2, 2020, 'Brown');
+
+// Putting the "Properties" of the Constructor to work 
+  // console.log(`Mitchell also has a house but she lives in ${mitchellHouse.location} and the color of the house is ${mitchellHouse.color}`);
+
+
+
+// ------------------  Class 26 Working with APIs -----------
+
+  //Get a dog photo from the dog.ceo api and place the photo in the DOM
+
+
+// Class 26 2:20:00 Starts talking how this code works
+// https://www.youtube.com/watch?v=WcSTeotmJtw&list=PLBf-QcbaigsJysJ-KFZvLGJvvW-3sfk1S&index=26&ab_channel=LeonNoel
+
+// Dog API
+
+    // fetch("https://dog.ceo/api/breeds/image/random")
+    //   .then(res => res.json())
+    //   .then(data => {
+    //     console.log(data.message)
+    //     document.querySelector('img').src = data.message;
+    //   })
+    //   .catch(err => {
+    //     console.log(`error ${err}`)
+    //   })
+
+// Shots API
+
+// The user will enter a cocktail. Get a cocktail name, photo, and instructions and place them in the DOM.
+
+
+
+
+
+      fetch("https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita")
+      .then(res => res.json())
+      .then(data => {
+        console.log(data);
+        console.log(data.drinks);
+        let myDrink = data.drinks[3];
+        console.log(myDrink.strDrink);
+        document.querySelector("img").src = myDrink.strDrinkThumb;
+        document.querySelector("h1").innerHTML = myDrink.strDrink;
+        let ingredients = [myDrink.strIngredient1, myDrink.strIngredient2, myDrink.strIngredient3, myDrink.strIngredient4 ]
+        document.querySelector("h2").innerHTML = ingredients;
+      })
+      .catch(err => {
+        console.log(`error ${err}`)
+      })

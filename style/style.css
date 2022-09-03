@@ -468,10 +468,16 @@ footer {
 
 body {
   background-color: gray;
+  height: 100vh;
 }
 
 .temperature {
   text-align: center;
   height: 200px;
   margin-top: 50px;
+}
+
+img {
+  max-width: 200px;
+  
 }
