@@ -1172,22 +1172,170 @@
 
 // The user will enter a cocktail. Get a cocktail name, photo, and instructions and place them in the DOM.
 
+      // fetch("https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita")
+      // .then(res => res.json())
+      // .then(data => {
+      //   console.log(data);
+      //   console.log(data.drinks);
+      //   let myDrink = data.drinks[3];
+      //   console.log(myDrink.strDrink);
+      //   document.querySelector("img").src = myDrink.strDrinkThumb;
+      //   document.querySelector("h1").innerHTML = myDrink.strDrink;
+      //   let ingredients = [myDrink.strIngredient1, myDrink.strIngredient2, myDrink.strIngredient3, myDrink.strIngredient4 ]
+      //   document.querySelector("h2").innerHTML = ingredients;
+      // })
+      // .catch(err => {
+      //   console.log(`error ${err}`)
+      // })
+
+// ----------------------- Class 27 Objects netflix tv show Review ----------------
+
+
+      //Create a Netflix TV Show class with a constructor that makes Netflix TV Shows with 4 properties and 3 methods
+
+
+// class Netflix{
+//   constructor(showDate, showCategory, showRated, numOfSeries) {
+//     this.date = showDate;
+//     this.category = showCategory;
+//     this.rated = showRated;
+//     this.numOfSeries = numOfSeries; 
+//   }
+//   play() {
+//     console.log('Playing...');
+//   }
+//   stop() {
+//     console.log('Stopping');
+//   }
+//   saveToList() {
+//     console.log('Saved to PlayList');
+//   }
+// }
+
+// let strangerThings = new Netflix(2020, 'Scary', '90%', 8 );
+
+// console.log(strangerThings);
+
+
+
+// Example fetch using pokemonapi.co
+// document.querySelector('button').addEventListener('click', getFetch)
+
+// function getFetch(){
+//   const choice = document.querySelector('input').value.toLocaleLowerCase();
+//   const url = 'https://pokeapi.co/api/v2/pokemon/'+choice
+
+//   fetch(url)
+//       .then(res => res.json()) // parse response as JSON
+//       .then(data => {
+//         console.log(data)
+//       })
+//       .catch(err => {
+//           console.log(`error ${err}`)
+//       });
+// }
+
+
+// ------------------  Class 27 War Card Game -----------
 
 
 
 
-      fetch("https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita")
-      .then(res => res.json())
+// document.querySelector('button').addEventListener('click', getFetch)
+
+// function getFetch(){
+//   const choice = document.querySelector('input').value.toLocaleLowerCase();
+//   const url = 'https://pokeapi.co/api/v2/pokemon/'+choice
+
+//   fetch(url)
+//       .then(res => res.json()) // parse response as JSON
+//       .then(data => {
+//         console.log(data)
+//       })
+//       .catch(err => {
+//           console.log(`error ${err}`)
+//       });
+// }
+
+
+// ------------------  Class 28 DnD Game -----------
+// **************** LOOPS THOUGH AN ARRAY CLASS 28 1:16:00 ***************
+
+//Example fetch using DnD5eAPI - place subclasses in ul
+// document.querySelector('button').addEventListener('click', getFetch)
+
+// function getFetch(){
+//   const choice = document.querySelector('input').value
+//   const url = `https://www.dnd5eapi.co/api/spells/${choice}`
+
+//   fetch(url)
+//       .then(res => res.json()) // parse response as JSON
+//       .then(data => {
+//        console.log(data);
+//       //  document.querySelector('h4.one').innerHTML = data.subclasses[0].name;
+//       //  document.querySelector('h4.two').innerHTML = data.subclasses[1].name;
+      
+//       // Using for each to loop though the array.
+//       data.subclasses.forEach(element => {
+//         console.log(element.name)
+//         // Creat an "li"
+//         const li = document.createElement("li");
+//         // Add text to "li"
+//         li.textContent = element.name;
+//         // append the "li" to the "ul"
+//         document.querySelector('ul').appendChild(li);
+//       }); 
+//       })
+//       .catch(err => { 
+//           console.log(`error ${err}`)
+//       });
+// }
+
+
+// ------------------  Class 28 Book Tracker -----------
+
+
+document.querySelector('button').addEventListener('click', getFetch)
+// Getting data from local storage on page load
+document.querySelector('h2').innerHTML = localStorage.getItem("books")
+
+
+function getFetch(){
+  const choice = document.querySelector('input').value
+  console.log(choice)
+  const url = `https://openlibrary.org/isbn/${choice}.json`
+
+  fetch(url)
+      .then(res => res.json()) // parse response as JSON
       .then(data => {
-        console.log(data);
-        console.log(data.drinks);
-        let myDrink = data.drinks[3];
-        console.log(myDrink.strDrink);
-        document.querySelector("img").src = myDrink.strDrinkThumb;
-        document.querySelector("h1").innerHTML = myDrink.strDrink;
-        let ingredients = [myDrink.strIngredient1, myDrink.strIngredient2, myDrink.strIngredient3, myDrink.strIngredient4 ]
-        document.querySelector("h2").innerHTML = ingredients;
+        console.log(data.title);
+        // put title into local Storage
+        localStorage.setItem("books", data.title);
+        document.querySelector('h2').innerHTML = localStorage.getItem("books");
+       
       })
       .catch(err => {
-        console.log(`error ${err}`)
-      })
+          console.log(`error ${err}`)
+      });
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
