@@ -1295,33 +1295,105 @@
 // ------------------  Class 28 Book Tracker -----------
 
 
-document.querySelector('button').addEventListener('click', getFetch)
-// Getting data from local storage on page load
-document.querySelector('h2').innerHTML = localStorage.getItem("books")
+// document.querySelector('button').addEventListener('click', getFetch)
+// // Getting data from local storage on page load
+// document.querySelector('h2').innerHTML = localStorage.getItem("books")
 
 
-function getFetch(){
-  const choice = document.querySelector('input').value
-  console.log(choice)
-  const url = `https://openlibrary.org/isbn/${choice}.json`
+// function getFetch(){
+//   const choice = document.querySelector('input').value
+//   console.log(choice)
+//   const url = `https://openlibrary.org/isbn/${choice}.json`
 
-  fetch(url)
-      .then(res => res.json()) // parse response as JSON
-      .then(data => {
-        console.log(data.title);
-        // put title into local Storage
-        localStorage.setItem("books", data.title);
-        document.querySelector('h2').innerHTML = localStorage.getItem("books");
+//   fetch(url)
+//       .then(res => res.json()) // parse response as JSON
+//       .then(data => {
+//         console.log(data.title);
+//         // put title into local Storage
+//         localStorage.setItem("books", data.title);
+//         document.querySelector('h2').innerHTML = localStorage.getItem("books");
        
-      })
-      .catch(err => {
-          console.log(`error ${err}`)
-      });
-}
+//       })
+//       .catch(err => {
+//           console.log(`error ${err}`)
+//       });
+// }
+
+// ------------------  Class 29 boulder-badge -----------
+
+// Variables
+//You are getting ready to face Brock for the Boulder Badge. You want three pokemon on your team that each have evolved at least once. You have bulbasaur which is at level 5 and evolves at level 16, caterpie which is at level 1 and evolves at level 7, and weedle which is at level 1 and evolves at level 7. Create three variables to store the number of rare candies each of your pokemon would need to evolve (rare candies increase your level by one). Finally, create a fourth variable named totalCandies that sums all the rare candies you would need. 
+
+// bulbasaurRareCandy = 11;
+// caterpieRareCandy = 6;
+// weedleRareCandy = 6;
+// totalRareCandy = bulbasaurRareCandy + caterpieRareCandy + weedleRareCandy;
+// console.log(totalRareCandy);
 
 
 
+//Conditionals And Functions
+//You have a charmander in your party. Charmander can only battle if the temperature is above 0 degrees celcius. Create one function that converts a Fahrenheit value to Celcius and another fuction that tells you wheither or not charmander can battle
 
+// let temperature = Number(prompt("Who hot is it?"));
+// function fahrenheit2Celcius() {
+//   let celsius = (temperature - 32) * 5/9;
+//   return celsius;
+// }
+
+// console.log(fahrenheit2Celcius());
+
+// if (fahrenheit2Celcius() > 0) {
+//   console.log('Charmander is able to fight');
+// } else {
+//   console.log(`It's to cold Charmander cant fight right now`);
+// }
+
+
+//Loops
+//You have joined an undeground pokemon leauge. In this league, trainers can use any number of pokemon. Print to the console "Pikachu I choose you" x times where x is the number of pokemon the trainer you are battling has in their party
+
+// let numOfPokemon = prompt("How many Pokemon do you have?");
+// for (let i = 0; i < numOfPokemon; i++ ) {
+//   console.log("Pikachu I choose you");
+// }
+
+
+
+// ------------------  Class 29 Cascade-badge -----------
+
+
+//Arrays
+//Your pokemon party order which is a list of pokemon has been leaked to Misty. Please create a function that reverses your list and prints it to the console. 
+// function reversePokemon(listOfPokemon) {
+//   console.log(listOfPokemon.reverse());
+
+//   for(let i = 0; i < listOfPokemon.length; i++) {
+//     console.log(listOfPokemon[i]);
+//   }
+
+// }
+
+// reversePokemon(["Pikachu", "Charmander", "Snorlax"]);
+
+//Given two integer arrays a, b, both of length >= 1, create a program that returns true if the sum of the squares of each element in a is strictly greater than the sum of the cubes of each element in b.
+// let arrayA = [1,2,3,4,5];
+// let arrayB = [1,2,3,4,5,6,7,8,9];
+
+// if (condition) {
+  
+// } else {
+  
+// }
+
+
+
+//Return a new array consisting of elements which are multiple of their own index in input array (length > 1).
+// Some cases:
+// [22, -6, 32, 82, 9, 25] =>  [-6, 32, 25]
+// [68, -1, 1, -7, 10, 10] => [-1, 10]
+
+//Given an array of integers as strings and numbers, return the sum of the array values as if all were numbers.Return your answer as a number.
 
 
 
