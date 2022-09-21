@@ -1396,18 +1396,70 @@
 //Given an array of integers as strings and numbers, return the sum of the array values as if all were numbers.Return your answer as a number.
 
 
+/* Class 30 Objects Espresso Machine Practice  */
+
+//Create an espresso machine constructor that makes machines with 4 properties and 3 methods
+
+class Espresso {
+  constructor(model, color, constrution, wight) {
+    this.model = model;
+    this.color = color;
+    this.constrution = constrution;
+    this.wight = wight;
+  }
+
+  makeCoffe() {
+    console.log(`Your Espresso is being made`);
+  }
+
+  gridCoffe() {
+    console.log(`Your coffe bean is being razor-precise grinding`);
+  }
+
+  adjustTemperature() {
+    console.log(`Adjusting Temperature`);
+  }
+
+}
+
+let luisCoffee = new Espresso(1, "black", "Metal", "10lbs");
+console.log(luisCoffee.makeCoffe()  ); 
+// ---------------------------------------- HOW WE WOULD WRTIE IT WITHOUT OPP ----------------------------
+/* This Looks Missy to much varables throw around, also had to make many parameters/arguments. If I change a variable I could easly break the code. */
+
+/*
+let hourlyRate = 250;
+let hours = 160;
+let taxRate = .35;
+
+function calculateProfit(rate, numOfHours, taxes) {
+  return rate * numOfHours * (1 - taxes);
+}
+
+function holdForTaxes(profitMade) {
+  return hourlyRate * hours - profitMade;
+}
+
+let profit = calculateProfit(hourlyRate, hours, taxRate);
+
+let taxesHeld = holdForTaxes(profit);
+*/
 
 
 
 
+// ---------------------------------------- ENCAPSULATION ----------------------------
+
+/* By using Encapsulation and fusing both the data and functionality is easer to read, make changes and not be afraid of changing a variable becuse now we are using the "this" keyword which is only refering to the variable inside the Encapsulation  */
+
+let seriousBusinessPerson = {
+  hourlyRate: 250, 
+  hours: 160, 
+  taxRate: .35,
+  calculateProfit: function() {
+    return this.hourlyRate * this.hours * ( 1 - this.taxRate );
+  }
+}
 
 
-
-
-
-
-
-
-
-
-
+// ---------------------------------------- ABSTRACTION  ----------------------------
