@@ -1427,7 +1427,7 @@ console.log(luisCoffee.makeCoffe()  );
 // ---------------------------------------- HOW WE WOULD WRTIE IT WITHOUT OPP ----------------------------
 /* This Looks Missy to much varables throw around, also had to make many parameters/arguments. If I change a variable I could easly break the code. */
 
-/*
+
 let hourlyRate = 250;
 let hours = 160;
 let taxRate = .35;
@@ -1443,7 +1443,6 @@ function holdForTaxes(profitMade) {
 let profit = calculateProfit(hourlyRate, hours, taxRate);
 
 let taxesHeld = holdForTaxes(profit);
-*/
 
 
 
@@ -1452,6 +1451,7 @@ let taxesHeld = holdForTaxes(profit);
 
 /* By using Encapsulation and fusing both the data and functionality is easer to read, make changes and not be afraid of changing a variable becuse now we are using the "this" keyword which is only refering to the variable inside the Encapsulation  */
 
+/*
 let seriousBusinessPerson = {
   hourlyRate: 250, 
   hours: 160, 
@@ -1460,6 +1460,55 @@ let seriousBusinessPerson = {
     return this.hourlyRate * this.hours * ( 1 - this.taxRate );
   }
 }
-
+*/
 
 // ---------------------------------------- ABSTRACTION  ----------------------------
+/* Leon made a caculator for his agency using a CONSTRACTOR */
+
+/*
+function AgencyContractor(hourlyRate, hours, taxRate) {
+  this.hourlyRate = hourlyRate;
+  this.hours = hours;
+  this.taxRate = taxRate;
+  this.calculateProfit = function() {
+    return this.hourlyRate * this.hours * (1 - this.taxRate);
+  }
+  this.invoiceClient = function() {
+    return `Your invoice total is ${this.hourlyRate * this.hours}`
+  }
+}
+*/
+
+
+/*
+Here the user can see their "invoice" BUT they can also see our "hourlyRate"/"Profit". We need to use ABSTRACTION to stop this
+*/
+
+/*
+let leon = new AgencyContractor(250, 160, .35);
+console.log( leon.invoiceClient() ); //40000
+console.log( leon.hourlyRate() ); //250
+console.log( leon.calculateProfit() ); //26000
+*/
+
+// ---------------------------------- Using ABSTACTION ----------------------
+
+function AgencyContractor(hourlyRate, hours, taxRate) {
+  this.taxRate = taxRate;
+  this.hours = hours;
+  let.hourlyRate = hourlyRate;       // Change "this." to let 
+  let.calculateProfit = function() { // Change "this." to let
+    return this.hourlyRate * this.hours * (1 - this.taxRate);
+  }
+  this.invoiceClient = function() {
+    return `Your invoice total is ${this.hourlyRate * this.hours}`
+  }
+}
+
+/*
+By changing "this." on hourlyRate and calculateProfit they are not bounded to the object (AgencyContractor). Meaning that when this object is spit out it no longer has a property called "hourlyRate" or "calculateProfit". However we can still use it like varables inside the constructor. They are "Scoped" inside, meaning the user can not access them.
+*/
+let leon = new AgencyContractor(250, 160, .35);
+console.log( leon.invoiceClient() ); //40000
+console.log( leon.hourlyRate() ); //undefined
+console.log( leon.calculateProfit() ); //Uncaught TypeError: leaon.calculateProfit is not a function
