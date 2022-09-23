@@ -1400,6 +1400,7 @@
 
 //Create an espresso machine constructor that makes machines with 4 properties and 3 methods
 
+/*
 class Espresso {
   constructor(model, color, constrution, wight) {
     this.model = model;
@@ -1424,10 +1425,12 @@ class Espresso {
 
 let luisCoffee = new Espresso(1, "black", "Metal", "10lbs");
 console.log(luisCoffee.makeCoffe()  ); 
+
+*/
 // ---------------------------------------- HOW WE WOULD WRTIE IT WITHOUT OPP ----------------------------
 /* This Looks Missy to much varables throw around, also had to make many parameters/arguments. If I change a variable I could easly break the code. */
 
-
+/*
 let hourlyRate = 250;
 let hours = 160;
 let taxRate = .35;
@@ -1444,7 +1447,7 @@ let profit = calculateProfit(hourlyRate, hours, taxRate);
 
 let taxesHeld = holdForTaxes(profit);
 
-
+*/
 
 
 // ---------------------------------------- ENCAPSULATION ----------------------------
@@ -1492,23 +1495,72 @@ console.log( leon.calculateProfit() ); //26000
 */
 
 // ---------------------------------- Using ABSTACTION ----------------------
-
+/*
 function AgencyContractor(hourlyRate, hours, taxRate) {
   this.taxRate = taxRate;
   this.hours = hours;
-  let.hourlyRate = hourlyRate;       // Change "this." to let 
-  let.calculateProfit = function() { // Change "this." to let
-    return this.hourlyRate * this.hours * (1 - this.taxRate);
-  }
+  let rate = hourlyRate;       // Change "this." to let 
+  let calculateProfit = function() { // Change "this." to let
+    return rate * this.hours * (1 - this.taxRate);
+  };
   this.invoiceClient = function() {
-    return `Your invoice total is ${this.hourlyRate * this.hours}`
-  }
+    return `Your invoice total is ${rate * this.hours}`
+  };
 }
+*/
+
 
 /*
 By changing "this." on hourlyRate and calculateProfit they are not bounded to the object (AgencyContractor). Meaning that when this object is spit out it no longer has a property called "hourlyRate" or "calculateProfit". However we can still use it like varables inside the constructor. They are "Scoped" inside, meaning the user can not access them.
-*/
+// */
+
+/*
 let leon = new AgencyContractor(250, 160, .35);
 console.log( leon.invoiceClient() ); //40000
 console.log( leon.hourlyRate() ); //undefined
 console.log( leon.calculateProfit() ); //Uncaught TypeError: leaon.calculateProfit is not a function
+*/
+
+// ---------------------------------- Inheritance ----------------------
+
+
+class Animal {
+  constructor(name, legs, color, age) {
+    this.name = name,
+    this.legs = legs,
+    this.color = color, 
+    this.age = age
+  }
+  speak() {
+    console.log(`${this.name} makes a sound`);
+  }
+
+  run() {
+    console.log(`${this.name} is running with ${this.legs} legs`)
+  }
+
+  milk() {
+    console.log(`${this.name} is ready to give milk`);
+  }
+}
+
+class Dog extends Animal{
+  constructor(name, breed, legs, color, age){
+    super(name, legs, color, age);
+    this.breed = breed;
+  }
+}
+
+
+class Cow extends Animal {
+  constructor(name, color, age) {
+    super(name, color, age)
+  }
+}
+
+let simba = new Dog("Simba", "Sheperd", 4, "black", 6);
+console.log(simba.run())
+
+
+let bestCow = new Cow("Milke", "Black and White", 10);
+console.log(bestCow.run());
