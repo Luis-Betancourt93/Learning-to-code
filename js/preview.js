@@ -1522,7 +1522,7 @@ console.log( leon.calculateProfit() ); //Uncaught TypeError: leaon.calculateProf
 */
 
 // ---------------------------------- Inheritance ----------------------
-
+/*
 
 class Animal {
   constructor(name, legs, color, age) {
@@ -1564,3 +1564,63 @@ console.log(simba.run())
 
 let bestCow = new Cow("Milke", "Black and White", 10);
 console.log(bestCow.run());
+*/
+
+
+// ---------------------------------- Ploymorphism ----------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ---------------------------------- Class 32 Bulding a Agency  ----------------------
+
+class Agency {
+  // Using Encapulation 
+  constructor(name, role) {
+    // the underscore here is using Abstration by seperating the name to ._name (Class 32 1:35) so no one can miss it up later on 
+      this._name = name;
+      this._role = role;
+  }
+
+  // Using a getter so the Underscore name/role can work  
+  get name(){
+    return this._name;
+  }
+
+  get role() {
+    return this._role;
+  }
+
+  sayHello(){
+    console.log(`Hello my name is ${this._name} and I'm ${this._role} at #100devs`);
+  }
+
+
+}
+
+
+class FrontEnd extends Agency {
+
+}
+
+
+class BackEnd extends Agency {
+
+}
+
+
