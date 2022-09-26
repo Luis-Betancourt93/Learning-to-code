@@ -1589,7 +1589,7 @@ console.log(bestCow.run());
 
 // ---------------------------------- Class 32 Bulding a Agency  ----------------------
 
-class Agency {
+class Contractor {
   // Using Encapulation 
   constructor(name, role) {
     // the underscore here is using Abstration by seperating the name to ._name (Class 32 1:35) so no one can miss it up later on 
@@ -1609,18 +1609,30 @@ class Agency {
   sayHello(){
     console.log(`Hello my name is ${this._name} and I'm ${this._role} at #100devs`);
   }
+}
 
+let luis = new Contractor("The Machine", "Front-End");
+
+
+class FrontEnd extends Contractor {
+  constructor(name, role, tech){
+    super(name,role)
+    this._tech = tech;
+  }
+
+  get tech() {
+    return this._tech;
+  }
+
+  sayHello() {
+    console.log(`Hello, I am ${this._name} and I work on the Front-End!`);
+  }
 
 }
 
 
-class FrontEnd extends Agency {
+// class BackEnd extends Agency {
 
-}
-
-
-class BackEnd extends Agency {
-
-}
+// }
 
 
