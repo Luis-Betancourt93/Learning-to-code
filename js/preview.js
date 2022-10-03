@@ -1665,3 +1665,1018 @@ houseOne()
   .catch(err => console.log(err))
 
   */
+
+
+
+  // ------------------  Class 36 Super Review -----------
+
+  /* 
+  //--- Easy
+//create a variable and assign it a number
+
+let num = 20;
+console.log(num);
+
+//minus 10 from that number
+
+
+let newNum = num -10;
+//print that number to the console
+console.log(newNum);
+
+//--- Medium
+//create a variable that holds a value from the input
+
+let result = prompt("Give me a number");
+
+//add 25 to that number
+
+result = Number(result) + 25
+
+//alert that number
+alert(result)
+
+//--- Hard
+//create a variable that holds the h1
+let title = document.querySelector("h1");
+
+
+//add an event listener to that element that console logs the sum of the two previous variables
+
+title.addEventListener("click", sum);
+
+function sum() {
+  console.log(result + newNum);
+}
+
+*/
+/*
+//Create a conditonal that checks their age
+//If under 16, tell them they can not drive
+//If under 18, tell them they can't hate from outside the club, because they can't even get in
+
+
+//If under 21, tell them they can not drink
+
+//If under 25, tell them they can not rent cars affordably
+//If under 30, tell them they can not rent fancy cars affordably
+//If under over 30, tell them there is nothing left to look forward too
+
+
+//--- Harder
+//On click of the h1
+
+
+//Take the value from the input
+
+//Place the result of the conditional in the paragraph
+
+document.querySelector("h1").addEventListener("click", checkAge);
+
+function checkAge() {
+  let age = Number(document.querySelector("input").value)
+  if(age < 16) {
+    console.log("you can not drive");
+  }else if(age < 18) {
+    console.log("you cant hate");
+  } else if (age < 21) {
+    console.log("you cant drink");
+  } else if (age < 25){
+    console.log("you cant rent cars affordably");
+  } else if (age < 30){
+    console.log("you cant rent fancy cars affordably");
+  } else if(age > 30){
+    console.log("there is nothing to look forwards too")
+  }
+}
+*/
+
+
+//---Easy
+//create a function that subtracts two numbers and alerts the difference
+// function subtractTwo(num1, num2) {
+//   alert(num1 - num2)
+// }
+
+// subtractTwo(10, 5);
+
+//create a function that divides three numbers and console logs the quotient
+
+// function dividesThree(numOne, numTwo, numThree) {
+// console.log(numOne/ numTwo / numThree);
+// }
+// dividesThree(5, 4, 2 );
+
+// create a function that multiplys three numbers and returns the product
+
+/*
+function multiplesThree(numOne, numTwo, numThree) {
+  let product =  numOne * numTwo * numThree;
+  return product
+}
+let returnedVal = multiplesThree(2, 5, 10)
+console.log(returnedVal)
+*/
+
+
+//---Medium
+//create a function that takes in three numbers. Add the first two numbers and return the remainder of dividing the sum of the first two numbers by the third number
+
+// function takesThree(numOne, numTwo, numThree) {
+// let firstTwo = numOne + numTwo;
+// return firstTwo / numThree
+// }
+
+// console.log(takesThree(5,5, 5));
+
+
+//---Hard
+//create a function that takes in 4 numbers. Multiply the first two numbers. If the product is greater than 100 add the sum of the last two numbers and console log the value. If the product is less that 100, subtract the difference of the last two numbers and console log the value. If the product is 100, multiply the first three numbers together and alert the remainder of dividing the fourth number
+/*
+function takesFour(numOne, numTwo, numThree, numFour) {
+  let firstTwo = numOne * numTwo;
+  if (firstTwo > 100) {
+    console.log(firstTwo + numThree + numFour)
+  } else if( firstTwo < 100 ){
+    console.log(firstTwo - (numThree + numFour))
+  } else {
+    let multiplyLastThree = numOne * numTwo * numThree;
+    alert(multiplyLastThree / numFour);
+  }
+}
+
+takesFour(7.6923, 7.6923, 7.6923, 2);
+*/
+
+/*
+document.querySelector('#finalRose').addEventListener('click', hide)
+
+function hide(){
+	document.querySelector("#claire").style.display = 'none'
+	document.querySelector("#sharleen").style.display = 'none'
+}
+*/
+
+/*
+const andi = document.querySelector('#andi')
+const claire = document.querySelector('#claire')
+const sharleen = document.querySelector('#sharleen')
+
+document.querySelector('#andiNext').addEventListener('click', andiNext)
+document.querySelector('#claireNext').addEventListener('click', claireNext)
+document.querySelector('#sharleenNext').addEventListener('click', sharleenNext)
+
+function andiNext(){
+	claire.classList.add("hidden")
+	sharleen.classList.add("hidden")
+	andi.classList.toggle("hidden")
+}
+
+function claireNext(){
+	sharleen.classList.add("hidden")
+	andi.classList.add("hidden")
+	claire.classList.toggle("hidden")
+}
+
+function sharleenNext(){
+	claire.classList.add("hidden")
+	andi.classList.add("hidden")
+	sharleen.classList.toggle("hidden")
+}
+*/
+
+// Create a function that takes in an array. If the first number, is less than the last number, alert "Hi". If the first number is greater than the last number, alert "Bye". If they are equal, alert "We close in an hour".
+
+/*
+function takesArray(arr) {
+  if (arr[0] < arr.at(-1)) {
+    alert("hi");
+  } else if(arr[0] > arr.at(-1)) {
+    alert("bye");
+  } else {
+    alert(" We close in an hour");
+  }
+}
+
+takesArray([10, 4, 10]);
+*/
+
+/*
+function returnEven(evenarr) {
+  let newArry = [];
+  evenarr.forEach((element) => {
+    if(element % 2 === 0 ) {
+      newArry.push(element)
+      
+    }
+  })
+  console.log(newArry)
+}
+
+
+let newarry = [1, 2, 3, 4, 5, 6, 7, 8]
+returnEven(newarry);
+*/
+
+
+// Create a Stopwatch object that has four properties and three methods.
+
+/*
+Object Literal
+
+let stopWatch = {}
+  stopWatch.make = "Nike"
+  stopWatch.model = "T300"
+  stopWatch.color = "black"
+
+ stopWatch.tellTime = function (time) {
+  console.log(`The this is ${time}`);
+ }
+
+stopWatch.startTimer = function() {
+  console.log(`Timer has started`);
+}
+
+stopWatch.endTimer = function() {
+  console.log(`timer has ended`);
+}
+
+console.log(stopWatch.endTimer());
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
