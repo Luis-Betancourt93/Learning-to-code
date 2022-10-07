@@ -1904,15 +1904,28 @@ stopWatch.endTimer = function() {
 console.log(stopWatch.endTimer());
 */
 
+/*
+Add the catch to this Async Function, HomeWork class 36 
+
+async function getACuteDogPhoto(){
+  const res = await fetch('https://dog.ceo/api/breeds/image/random')
+  const data = await res.json()
+  console.log(data)
+}
+getACuteDogPhoto()
+
+*/
 
 
-
-
-
-
-
-
-
+const http = require('http')
+const fs = require('fs')
+http.createServer((req, res) => {
+  fs.readFile('index.html', (err, data) => {
+    res.writeHead(200, {'Content-Type': 'text/html'})
+    res.write(data)
+    res.end()
+  })
+}).listen(8000)
 
 
 
